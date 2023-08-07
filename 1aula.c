@@ -2,7 +2,7 @@
 
 int fatorial (int N){
     if (N==0) return 1;
-    else return N*fatorial(n-1);
+    else return N*fatorial(N-1);
 }
 
 int main(){
@@ -11,4 +11,4 @@ int main(){
     scanf("%d",&N);
     printf("Resultado:%d",fatorial(N));
     return;
-}
+} 
