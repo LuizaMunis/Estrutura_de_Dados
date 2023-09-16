@@ -1,0 +1,24 @@
+Vetor de palavras ordenado em ordem crescente:
+abacate
+abacaxi
+amora
+banana
+caqui
+cereja
+figo
+framboesa
+goiaba
+kiwi
+laranja
+limao
+maca
+manga
+melancia
+morango
+papaya
+pera
+pessego
+uva
+Mediana: kiwi e laranja
+Comparações: 64
+Trocas: 49

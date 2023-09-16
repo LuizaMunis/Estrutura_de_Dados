@@ -1,6 +1,7 @@
 {
-    "C_Cpp.errorSquiggles": "disabled",
-    "files.associations": {
-        "4ATIVIDADE.C": "cpp"
-    }
+  "C_Cpp.errorSquiggles": "disabled",
+  "files.associations": {
+    "4ATIVIDADE.C": "cpp",
+    "quicksort": "c"
+  }
 }
