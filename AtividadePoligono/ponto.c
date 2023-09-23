@@ -17,7 +17,7 @@ double calcularArea(Ponto pontos[], int n) {
 int lerVertices(const char *Arquivo, Ponto pontos[], int *n) {
     FILE *file;
     
-    file = fopen("C:\\Users\\luiza\\Estrutura de dados\\Estrutura_de_Dados\\AtividadeP\\vertices.txt", "r");
+    file = fopen("C:\\Users\\luiza\\Estrutura de dados\\Estrutura_de_Dados\\AtividadePoligono\\vertices.txt", "r");
 
     if (file == NULL) {
         printf("Erro ao abrir o arquivo.\n");
