@@ -38,7 +38,7 @@ void imprimir(Matriz A) {
     for (int i = 1; i <= A.nlin; i++) {
         for (int j = 1; j <= A.ncol; j++) {
             Celula *atual = A.cabeca->direita;
-            int z = 0;
+            int z = 0;//pra ver se encontrou
 
             while (atual != A.cabeca) {
                 if (atual->linha == i && atual->coluna == j) {
