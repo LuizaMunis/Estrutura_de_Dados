@@ -6,31 +6,33 @@ int main() {
     Matriz A, B, C;
     FILE *arquivo, *arquivo2;
 
-    arquivo = fopen("matrizA.txt", "r");
-    arquivo2 = fopen("matrizB.txt", "r");
+    arquivo = fopen("Trab.Matriz\\matrizA.txt", "r");
+    arquivo2 = fopen("Trab.Matriz\\matrizB.txt", "r");
 
     if (arquivo == NULL || arquivo2 == NULL) {
         printf("Erro ao abrir os arquivos\n");
         return 1;
     }
 
-    
     A = lerMatriz(arquivo);
-    B = lerMatriz(arquivo2);
-
     printf("Matriz A:\n");
-    imprimeMatriz(A);
+    imprimir(A);
 
-    printf("\nMatriz B:\n");
-    imprimir(B);
+    B = lerMatriz(arquivo2);
     C = somar(A, B);
-    printf("\nSoma das matrizes\n");
+    printf("\nSoma\n");
     imprimir(C);
-    fclose(arquivo);
-    fclose(arquivo2);
+
+    C= multiplicar(A,B);
+    printf("\nMultiplicação\n");
+    imprimir(C);
+
     deletar(&A);
     deletar(&B);
     deletar(&C);
+
+    fclose(arquivo);
+    fclose(arquivo2);
 
     return 0;
 }

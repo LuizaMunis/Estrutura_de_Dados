@@ -1,26 +1,20 @@
+
 #define MATRIZ
 
-typedef struct Celula
-{
+typedef struct Celula {
     struct Celula *direita, *abaixo;
     int linha, coluna;
     float valor;
 } Celula;
 
-typedef struct
-{
+typedef struct {
     Celula *cabeca;
     int nlin, ncol;
 } Matriz;
 
-Matriz lerMatriz(FILE *arquivo);
-
 void imprimir(Matriz A);
-
-void inserir(Matriz *matriz, int i, int j, float v);
-
-void deletar(Matriz *matriz);
-
+Matriz lerMatriz(FILE *arquivo);
 Matriz somar(Matriz A, Matriz B);
-
 Matriz multiplicar(Matriz A, Matriz B);
+void inserir(Matriz *matriz, int i, int j, float v);
+void deletar(Matriz *matriz);
