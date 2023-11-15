@@ -15,26 +15,22 @@ int main() {
     }
 
     
-    A = leMatriz(arquivo);
-    B = leMatriz(arquivo2);
+    A = lerMatriz(arquivo);
+    B = lerMatriz(arquivo2);
 
     printf("Matriz A:\n");
     imprimeMatriz(A);
 
     printf("\nMatriz B:\n");
-    imprimeMatriz(B);
-
-    
-    C = somaMatrizes(A, B);
+    imprimir(B);
+    C = somar(A, B);
     printf("\nSoma das matrizes\n");
-    imprimeMatriz(C);
-
-    
+    imprimir(C);
     fclose(arquivo);
     fclose(arquivo2);
-    liberaMatriz(&A);
-    liberaMatriz(&B);
-    liberaMatriz(&C);
+    deletar(&A);
+    deletar(&B);
+    deletar(&C);
 
     return 0;
 }
