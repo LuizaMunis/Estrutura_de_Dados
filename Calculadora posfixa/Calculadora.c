@@ -133,7 +133,7 @@ double avaliarExpressaoPosfixada(const char *expressao)
 int main()
 {
     // Exemplo de expressão em notação pós-fixada: “2 4 + 5 *“
-    const char *expressao = "9 5 2 8 * 4 + * +";
+    const char *expressao = "3 4 + 5 tan *";
     double resultado = avaliarExpressaoPosfixada(expressao);
     printf("Resultado: %lf\n", resultado);
     return 0;
